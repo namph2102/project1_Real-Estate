@@ -1,13 +1,47 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-size: 1.6rem;
     font-family: 'Poppins';
+}
+
+h2 {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2, 4rem;
+    overscroll-behavior: contain;
+}
+
+h2::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-left: -14px;
+
+}
+h2::after{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    content:"";
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: gray;
 }
